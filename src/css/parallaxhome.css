@@ -1,0 +1,43 @@
+*{
+    margin:0
+}
+
+.bgimg-1{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imgs/home-ToDo.webp");
+    min-height: 100vh;
+}
+@media(max-width: 1000px){
+    .bgimg-1{
+        min-height: 75vh;
+    }
+}
+@media(max-width: 600px){
+    .bgimg-1{
+        min-height: 50vh;
+    }
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.border{
+    background-color: #000000;
+    color: white;
+    padding: 18px;
+    font-size: 25px;
+}
+.border:hover{
+    transition: all 1.5s;
+    padding: 25px;
+    font-size: 30px;
+}

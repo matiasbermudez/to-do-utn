@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+.home-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-Container{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-titulos{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.home-titulos h1{
+    font-size: 3rem;
+}
+.home-titulos h2{
+    font-size: 1.3rem;
+}
+.home-imagen{
+    width: 100%;
+}
+@media(max-width: 800px){
+    .home-Container{
+        width: 100%;
+    }
+    .home-titulos h1{
+        font-size: 2rem;
+    }
+    .home-titulos h2{
+        font-size: 1rem;
+    }
+}
+.home-parrafo{
+    font-size: 1.3rem;
+    padding: 20px;
+    font-family: 'ArchivoNarrowRegular';
+    margin-bottom: 50px;
+}

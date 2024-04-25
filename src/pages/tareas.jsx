@@ -34,7 +34,7 @@ export const Tareas = () => {
 
     const editarTarea = (event, id) => {
         const tareaInputId = id
-        
+
         setTareas((preTareas) => {
             const data = (preTareas.map((elemento) => elemento.id === tareaInputId ?
                 { ...elemento, nombre: modificar }
@@ -58,8 +58,12 @@ export const Tareas = () => {
                     <h2>Lista de tareas</h2>
                     {
                         tareas.map((elemento) => (
-                            <div key={elemento.id} className='Tareas-liContainer'>
-                                <li className={`Tareas-li ${elemento.completado
+                            <div
+                                key={elemento.id}
+                                className='Tareas-liContainer'
+                            >
+                                <li 
+                                    className={`Tareas-li ${elemento.completado
                                     ? "completado"
                                     : ''}`}> {elemento.nombre}</li>
 
@@ -118,7 +122,7 @@ export const Tareas = () => {
                                     <div className='Tareas-div-editar'>
                                         <button onClick={modoEdit}>Editar</button>
 
-                                        <form action="#" onSubmit={(event) => editarTarea(event, elemento.id) } className={`${edit}`}>
+                                        <form action="#" onSubmit={(event) => editarTarea(event, elemento.id)} className={`${edit}`}>
 
                                             <input type="text"
                                                 placeholder='edite Tarea'
